@@ -16,17 +16,13 @@ The packages listed below can be install with Bundler.
 ## Installation
 #### YouCompleteMe
 
-Requires Vim 7.3.584
-
-Requires python2 with dev files (in package manager)
-
-Requires CMake
-
-Requires clang for C/C++/Objective C support
-
-Must run installation script to compile code
+* Requires Vim 7.3.584
+* Requires python2 with dev files (in package manager)
+* Requires CMake
+* Requires clang for C/C++/Objective C support
+* Must run installation script to compile code
 
 #### Airline
-Requires Fugitive for git integration
 
-Looks better with the installation of Powerline fonts.
+* Requires Fugitive for git integration
+* Looks better with the installation of Powerline fonts.
