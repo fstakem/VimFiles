@@ -4,18 +4,29 @@ The packages listed below can be install with Bundler.
 
 ## Features
 * Project explorer => Nerdtree
-* Code completion => YouComopleteMe
-* File search => XX
-* Text search => XX
+* Code completion => YouCompleteMe
+* Fuzzy file search => Ctrlp
+* Text search => Ack
 * Tab bar => Airline
 * Git wrapper => Fugitive
+* Path based search => Command T
 
 ## Usage
 
 ## Installation
 #### YouCompleteMe
 
+Requires Vim 7.3.584
+
+Requires python2 with dev files (in package manager)
+
+Requires CMake
+
+Requires clang for C/C++/Objective C support
+
+Must run installation script to compile code
+
 #### Airline
-Requires Fugitive
+Requires Fugitive for git integration
 
 Looks better with the installation of Powerline fonts.
