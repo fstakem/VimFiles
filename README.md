@@ -1,23 +1,21 @@
-##### Fred's Vim Configuration
-=======
+## Fred's Vim Configuration
 The idea for this was from my friend Dave and others who have posted their Vim configurations.
 The packages listed below can be install with Bundler.
 
-##### Features
-=======
-Project explorer => Nerdtree
-Code completion => YouComopleteMe
-File search => XX
-Text search => XX
-Tab bar => Airline
-Git wrapper => Fugitive
+## Features
+* Project explorer => Nerdtree
+* Code completion => YouComopleteMe
+* File search => XX
+* Text search => XX
+* Tab bar => Airline
+* Git wrapper => Fugitive
 
-##### Usage
-=======
+## Usage
 
-##### Installation
-=======
-# YouCompleteMe
+## Installation
+#### YouCompleteMe
 
-# Airline
+#### Airline
 Requires Fugitive
+
+Looks better with the installation of Powerline fonts.
