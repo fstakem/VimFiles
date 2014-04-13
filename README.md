@@ -12,6 +12,7 @@ The packages listed below can be install with Bundler.
 * Path based search => Command T
 
 ## Usage
+* <leader> nt => start Nerdtree
 
 ## Installation
 #### YouCompleteMe
