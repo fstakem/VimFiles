@@ -3,6 +3,7 @@ The idea for this was from my friend Dave and others who have posted their Vim c
 The packages listed below can be install with Bundler.
 
 ## Features
+* Package management => Bundler
 * Project explorer => Nerdtree
 * Code completion => YouCompleteMe
 * Fuzzy file search => Ctrlp
