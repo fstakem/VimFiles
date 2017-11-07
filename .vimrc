@@ -25,8 +25,6 @@ set tabstop=2                   "two tab spaces
 set softtabstop=2               "number of spaces to skip or insert when <BS>ing or <Tab>ing
 set expandtab                   "spaces instead of tabs for better cross-editor compatibility
 set smarttab                    "use shiftwidth and softtabstop to insert or delete (on <BS>) blanks
-"set cindent                     "recommended seting for automatic C-style indentation
-"set autoindent                  "automatic indentation in non-C files
 set nowrap                      "no wrapping
 set copyindent                  "copy the previous indentation on autoindenting
 set backspace=indent,eol,start  "allow backspacing over everything in insert mode
@@ -50,21 +48,6 @@ let g:nerdtree_tabs_open_on_console_startup=0
 let NERDTreeShowHidden=1
 map <leader>nt :NERDTree<CR>
 
-" Update CTags
-map <Leader>ct :!ctags -R --exclude=.git --exclude=log --exclude=.svn --verbose=yes * <CR>
- 
-" ExCTags window (requires http://ctags.sourceforge.net/)
-nmap <F8> :TagbarToggle<CR>
-let g:tagbar_left = 1
-"autocmd FileType * nested :call tagbar#autoopen()
-let g:tagbar_autofocus = 1
-let g:tagbar_compact = 1
-let g:tagbar_autoclose = 1
- 
-" open ctag in tab/vertical split
-map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
-map <leader><C-\> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
-
 " Tab/shift-tab to indent/outdent in visual mode.
 vnoremap <Tab> >gv
 vnoremap <S-Tab> <gv
@@ -72,28 +55,12 @@ vnoremap <S-Tab> <gv
 vnoremap > >gv
 vnoremap < <gv
 
-" This allows you to share Vim's clipboard with OS X.
-" set clipboard=unnamed
-" set clipboard=unnamedplus
- 
-" Yank to OS X pasteboard. (Need to have this installed and configured per the
-" tmux book by Brian Hogan
-" https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard.git)
-" Only need this if clipboard=unnamed isn't enabled or you aren't on mvim
-"noremap <leader>y "*y
- 
-vmap <C-x> :!pbcopy<CR>
-vmap <C-c> :w !pbcopy<CR><CR>
-
 " Mouse support enabled
 set mouse+=a
 if &term =~ '^screen'
     " tmux knows the extended mouse mode
     set ttymouse=xterm2
 endif
-
-" Get osx delete to work
-" set backspace=indent,eol,start
 
 " Tab movement???
 map <C-h> :tabprevious<CR>
