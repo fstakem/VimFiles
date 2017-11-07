@@ -1,42 +1,29 @@
 ## Fred's Vim Configuration
-The idea for this was from my friend Dave and others who have posted their Vim configurations.
-The packages listed below can be install with Bundler.
+This my basic vim config. I use vim for a decent amount of dev work but it is not my main editor.
 
 ## Features
-* Package management => Pathogen
-* Project explorer => Nerdtree
-* Code completion => YouCompleteMe
-* Fuzzy file search => Ctrlp
-* Text search => Ack
-* Tab bar => Airline
-* Git wrapper => Fugitive
-* Path based search => Command T
+* Package management  => Pathogen
+* Project explorer    => Nerdtree
+* Code completion     => YouCompleteMe
+* Tab bar             => Vim Airline
+* Tmux integration    => Tmuxline
+* Visual git          => Vim Gitgutter
 
 ## Usage
 * <leader> nt => start Nerdtree
 
-## Installation
-#### YouCompleteMe
+## Pathogen
+mkdir -p ~/.vim/autoload ~/.vim/bundle && \
+curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 
-* Requires Vim 7.3.584
-* Requires python2 with dev files (in package manager)
-* Requires CMake
-* Requires clang for C/C++/Objective C support
-* Must run installation script to compile code
+## Nerdtree/Vim-Gitgutter/Vim-Airline/Tmuxline
+* git clone https://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree
+* git clone https://github.com/airblade/vim-gitgutter.git ~/.vim/bundle/vim-gitgutter
+* git clone https://github.com/vim-airline/vim-airline ~/.vim/bundle/vim-airline
+* git clone https://github.com/edkolev/tmuxline.vim ~/.vim/bundle/tmuxline.vim
 
-#### Airline
+## If using pyenv python with YouCompleteMe you must install python in this way
+env PYTHON_CONFIGURE_OPTS="--enable-shared"
 
-* Requires Fugitive for git integration
-* Looks better with the installation of Powerline fonts.
-
-## Issues in using vim and tmux on my mac
-
-#### Tmux issues
-* Want to be able to visually select and copy text with mouse
-	Note - pasting from clipboard works
-	
-#### Vim issues
-* Want to figure out how to paste from clipboard
-	Note - it can paste text but the first few chars are missing
-* Want to figure out how to copy from vim to bash or other programs
-* Want to figure out how to after return key to be at the correct indent
+## YouCompleteMe
+This is a more complex build so please follow its individual instructions.
