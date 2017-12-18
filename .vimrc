@@ -59,10 +59,13 @@ if &term =~ '^screen'
     set ttymouse=xterm2
 endif
 
-" Tab movement???
-map <C-h> :tabprevious<CR>
-map <C-l> :tabnext<CR>
-map <C-t> :tabnew<CR>:NERDTree<CR>
+" Tab movement
+nnoremap <C-S-tab> :tabprevious<CR>
+nnoremap <C-tab>   :tabnext<CR>
+nnoremap <C-t>     :NERDTree<CR>
+inoremap <C-S-tab> <Esc>:tabprevious<CR>i
+inoremap <C-tab>   <Esc>:tabnext<CR>i
+inoremap <C-t>     <Esc>:NERDTree<CR>
 
 " Vim splits
 nnoremap <C-J> <C-W><C-J>
