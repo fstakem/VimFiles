@@ -60,9 +60,9 @@ if &term =~ '^screen'
 endif
 
 " Tab movement
-map <C-S-tab> :tabprevious<CR>
-map <C-tab>   :tabnext<CR>
-map <C-t>     :NERDTree<CR>
+map <C-[> :tabprevious<CR>
+map <C-]> :tabnext<CR>
+map <C-t> :NERDTree<CR>
 
 " Vim splits
 nnoremap <C-J> <C-W><C-J>
