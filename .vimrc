@@ -9,7 +9,6 @@ syntax on                       "Turn on syntax highlighting
 set synmaxcol=800
 
 set showcmd                     "show incomplete cmds down the bottom
-"set showmode                    "show current mode down the bottom
 set showmatch                   "set show matching parenthesis
 
 set virtualedit=all             "allow the cursor to go in to 'invalid' places
